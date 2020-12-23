@@ -14,3 +14,12 @@ Building the Repository -- doc/BuildRepository.txt
 
 See the COPYING file for license rights and limitations
 </pre>
+
+```
+git clone https://github.com/mp4v2/mp4v2.git ~/mp4v2
+cd ~/mp4v2
+autoreconf -i
+./configure
+make CXXFLAGS='-fpermissive'
+make install
+```
